@@ -1,10 +1,11 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Dimensions } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { LineChart } from "react-native-chart-kit";
 
 export default function App() {
   return (
-    <View>
+    <SafeAreaView>
       <Text>Bezier Line Chart</Text>
       <LineChart
         data={{
@@ -49,7 +50,7 @@ export default function App() {
           borderRadius: 16,
         }}
       />
-    </View>
+    </SafeAreaView>
   );
 }
 
